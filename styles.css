@@ -47,6 +47,15 @@ table {
 	border-spacing: 0;
 }
 
+/* END OF RESET */
+
+@font-face {
+    font-family: "norse-bold";
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -77,15 +86,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: rgba(0,0,0,.6);
     margin-top: 25vh;
+    padding: 13px 0;
+    font: 5em "norse-bold";
 }
 
-.logo {
-    height: 10vh;
+.logo-container > img {
+    height: 1.3em;
 }
 
-.image-footer {
+.image-credit {
     text-align: center;
     margin-bottom: 3vh;
+}
+
+.image-credit > a {
+    color: white;
+    text-decoration-color: white;
 }
