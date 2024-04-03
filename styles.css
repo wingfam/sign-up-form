@@ -77,9 +77,12 @@ body {
 }
 
 #content-wrapper {
-    background-color: beige;
+    background-color: rgba(249,250,251);
     flex-basis: 75%;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logo-container {
@@ -87,7 +90,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,.6);
-    margin-top: 25vh;
+    margin-top: 2em;
     padding: 13px 0;
     font: 5em "norse-bold";
 }
@@ -98,10 +101,44 @@ body {
 
 .image-credit {
     text-align: center;
-    margin-bottom: 3vh;
+    margin-bottom: 1em;
 }
 
 .image-credit > a {
     color: white;
     text-decoration-color: white;
+}
+
+.welcome-message {
+    margin-left: 3em;
+    max-width: 33em;
+    text-wrap: wrap;
+    font: 1.3em 'Roboto';
+    font-weight: 700;
+}
+
+.welcome-message span {
+    font-style: italic;
+}
+
+.welcome-message p:nth-last-child(1) {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.main-form {
+    background-color: rgba(255, 255, 255);
+    box-shadow: 5px 5px 5px grey;
+    padding-left: 3em;
+    margin-bottom: 3em;
+}
+
+.main-form ul {
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.form-wrapper > form > button, 
+.form-wrapper > form > p {
+    margin-left: 3em;
 }
