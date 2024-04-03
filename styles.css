@@ -113,7 +113,7 @@ body {
     margin-left: 3em;
     max-width: 33em;
     text-wrap: wrap;
-    font: 1.3em 'Roboto';
+    font: 1.5em 'Roboto';
     font-weight: 700;
 }
 
@@ -129,13 +129,40 @@ body {
 .main-form {
     background-color: rgba(255, 255, 255);
     box-shadow: 5px 5px 5px grey;
-    padding-left: 3em;
     margin-bottom: 3em;
+    padding: 2em 4.6em;
+}
+
+.main-form > p {
+    font: 1.5em 'Roboto';
+    font-weight: 700;
+    margin-bottom: 1em;
 }
 
 .main-form ul {
+    display: grid;
+    grid-template-columns: repeat(2, 20em);
+    gap: 1.2em;
+}
+
+.main-form li {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    width: 80%;
+    max-width: 17em;
+    font: 0.9em 'Roboto';
+}
+
+.main-form input {
+    height: 2em;
+    padding: 0 10px;
+    border: 1px solid rgba(229,231,235);
+    border-radius: 4px;
+    font: 1.2em 'Roboto';
+}
+
+.main-form input:focus {
+    box-shadow: 5px 5px 5px blue;
 }
 
 .form-wrapper > form > button, 
