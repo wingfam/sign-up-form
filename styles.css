@@ -56,9 +56,14 @@ table {
     font-style: normal;
 }
 
-body {
-    height: 100vh;
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#wrapper {
     display: flex;
+    justify-content: space-between;
 }
 
 #splash-image-wapper {
@@ -74,6 +79,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     color: white;
+    height: 100vh;
 }
 
 #content-wrapper {
@@ -110,10 +116,11 @@ body {
 }
 
 .welcome-message {
+    width: 30em;
     margin-left: 3em;
-    max-width: 33em;
+    margin-top: 3em;
     text-wrap: wrap;
-    font: 1.5em 'Roboto';
+    font: 1.2em 'Roboto';
     font-weight: 700;
 }
 
@@ -123,18 +130,18 @@ body {
 
 .welcome-message p:nth-last-child(1) {
     margin-top: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .main-form {
     background-color: rgba(255, 255, 255);
     box-shadow: 5px 5px 5px grey;
-    margin-bottom: 3em;
     padding: 2em 4.6em;
+    margin-bottom: 2em;
 }
 
 .main-form > p {
-    font: 1.5em 'Roboto';
+    font: 1.2em 'Roboto';
     font-weight: 700;
     margin-bottom: 1em;
 }
@@ -149,8 +156,8 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    max-width: 17em;
-    font: 0.9em 'Roboto';
+    max-width: 20em;
+    font: 0.8em 'Roboto';
 }
 
 .main-form input {
@@ -167,5 +174,22 @@ body {
 
 .form-wrapper > form > button, 
 .form-wrapper > form > p {
-    margin-left: 3em;
+    margin-left: 5em;
+    font: 1em 'Roboto';
+}
+
+.form-wrapper > form > button {
+    height: 3em;
+    width: 12em;
+    color: white;
+    background-color: #596D48;
+    border: 0px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px grey;
+    margin-bottom: 2em;
+}
+
+.form-wrapper > form > p > a{
+    text-decoration: none;
+    color: #596D48;
 }
